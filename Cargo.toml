@@ -1,0 +1,8 @@
+[package]
+name = "MathCL"
+version = "0.1.0"
+edition = "2021"
+authors = ["Maurício Paiva da Silva <mauriciopaiva.matematica@gmail.com>"]
+licence = "MIT"
+
+[dependencies]
