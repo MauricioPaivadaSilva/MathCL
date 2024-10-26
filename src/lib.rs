@@ -1,4 +1,10 @@
-mod basic {
+pub mod basic {
+
+    pub mod numbers {
+        pub const PI: f32 = 3.141592;
+        pub const EULER: f32 = 2.718281;
+    }
+
     pub fn sum(mut num: f32, n: u32) -> f32 {
         let mut i: u32 = 0;
         let start: f32 = num;
@@ -49,6 +55,16 @@ mod basic {
             num *= -1.0;
         }
         num
+    }
+
+    pub fn sqrt(num: f32, n: u32) -> f32 {
+        let mut x: f32 = 1.0;
+        let mut count: u8 = 0;
+        while count < 100 {
+            x = x - ((pow(x, n as i32) - num)/((n as f32)*(pow(x, (n as i32)-1))));
+            count += 1;
+        }
+        x
     }
 }
 
@@ -129,5 +145,20 @@ mod tests {
     #[test]
     fn pow_5() {
         assert_eq!(basic::pow(-2.0, -3), -0.125)
+    }
+
+    #[test]
+    fn sqrt_1() {
+        assert_eq!(basic::sqrt(4.0, 2), 2.0)
+    }
+
+    #[test]
+    fn sqrt_2() {
+        assert_eq!(basic::sqrt(27.0, 3), 3.0)
+    }
+
+    #[test]
+    fn sqrt_3() {
+        assert_eq!(basic::sqrt(9.0, 2), 3.0)
     }
 }
