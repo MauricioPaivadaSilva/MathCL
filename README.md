@@ -17,7 +17,7 @@
 
 This project aims to be a way of studying the programming language [Rust](https://www.rust-lang.org), as well as applying knowledge developed in my graduation (mathematics degree).
 
-[**Documentação em pt-BR**](https://github.com/MauricioPaivadaSilva/MathCL/docs/README_pt-BR.md)
+[**Documentação em pt-BR**](https://github.com/MauricioPaivadaSilva/MathCL/blob/main/docs/README_pt-BR.md)
 
 **Note:** This study is **NOT** primarily intended to be used on real projects.
 
