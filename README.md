@@ -27,6 +27,7 @@ This project aims to be a way of studying the programming language [Rust](https:
 
 - [1 Technologies employed](#1-technologies-employed)
 - [2 Library functions](#2-library-functions)
+    - [Basic module](#basic-module)
 - [3 Dev mode](#3-dev-mode)
     - [How to contribute](#how-to-contribute)
         - [Rules](#rules)
@@ -36,7 +37,7 @@ This project aims to be a way of studying the programming language [Rust](https:
 
 **Note**: My principle is to use Rust in a "pure" form in this project, therefore, I do not intend to use any third-party libraries. This decision is based on the intention of creating this project.
 
-Tecnologias:
+Technologies:
 
 <div align="center">
 
@@ -49,6 +50,28 @@ Tecnologias:
 ---
 
 ## 2 Library functions
+
+The library is divided into modules, each module corresponds to a specific function.
+
+### Basic module
+
+In the basic module there are basic functions that are used in mathematics, namely:
+
+<div align="center">
+
+| Function | Input | Output | Description |
+| --- | --- | --- | --- |
+| `sum()` | `(f32, u32)` | `f32` | This is a function that solves a sum. |
+| `fat()` | `u32` | `u32` | This is a function that solves a factorial. |
+| `pow()` | `(f32, i32)` | `f32` | It is a function that resolves a power of any number. |
+| `module()` | `f32` | `f32` | This is a function that finds the modulus of the input value. |
+| `sqrt()` | `(f32, u32)` | `f32` | This is a function that solves for the root of a given value. |
+
+</div>
+
+There is also a sub module that contains values ​​of important constants like $e$ and $\pi$.
+
+<!-- #### Como importar as funções em seu código -->
 
 ---
 

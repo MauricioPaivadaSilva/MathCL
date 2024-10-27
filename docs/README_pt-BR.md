@@ -25,6 +25,7 @@ Este projeto tem como intuíto ser uma forma de estudar a linguagem de programa�
 
 - [1 Tecnologias empregadas](#1-tecnologias-empregadas)
 - [2 Funções de biblioteca](#2-funções-de-biblioteca)
+    - [Módulo básico](#módulo-básico)
 - [3 Modo de desenvolvimento](#3-modo-de-desenvolvimento)
     - [Como contribuir?](#como-contribuir)
         - [Regras](#regras)
@@ -47,6 +48,28 @@ Tecnologias:
 ---
 
 ## 2 Funções de biblioteca
+
+A biblioteca é dividida em módulos, cada módulo corresponde a uma dada função.
+
+### Módulo básico
+
+No módulo básico há funções básicas que são utilizadas em matemática, sendo elas:
+
+<div align="center">
+
+| Função | Entrada | Saída | Descrição |
+| --- | --- | --- | --- |
+| `sum()` | `(f32, u32)` | `f32` | Trata-se de uma função que resolve uma somatória. |
+| `fat()` | `u32` | `u32` | Trata-se de uma função que resolve um fatorial. |
+| `pow()` | `(f32, i32)` | `f32` | Trata-se de uma função que resolve uma potência de um número qualquer. |
+| `module()` | `f32` | `f32` | Trata-se de uma função que encontra o módulo do valor de entrada. |
+| `sqrt()` | `(f32, u32)` | `f32` | Trata-se de uma função que resolve a raíz de um dado valor. |
+
+</div>
+
+Também há um sub módulo que contém valores de constantes importantes como $e$ e o $\pi$.
+
+<!-- #### Como importar as funções em seu código -->
 
 ---
 
