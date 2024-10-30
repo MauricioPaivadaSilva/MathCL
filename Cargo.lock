@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "MathCL"
+name = "mathcl"
 version = "0.0.1"
