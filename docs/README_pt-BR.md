@@ -4,11 +4,9 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MathCL) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MathCL) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MathCL) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MathCL/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MathCL)
 
-**Testes do GitHub actions serão adicionados em breve**
-
-<!-- | Teste | Resultado |
+| Teste | Resultado |
 |---|---|
-| Testes | [![Resultados](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yaml/badge.svg)](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/pytest.yaml) | -->
+| Testes | [![Resultados](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/ci.yaml/badge.svg)](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/ci.yaml) |
 
 
 </div>
