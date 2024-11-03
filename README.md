@@ -4,11 +4,9 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/MauricioPaivadaSilva/MathCL) ![GitHub language count](https://img.shields.io/github/languages/count/MauricioPaivadaSilva/MathCL) ![GitHub License](https://img.shields.io/github/license/MauricioPaivadaSilva/MathCL) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/MauricioPaivadaSilva/MathCL/main) ![GitHub repo size](https://img.shields.io/github/repo-size/MauricioPaivadaSilva/MathCL)
 
-**GitHub actions tests will be added soon**
-
-<!-- | Teste | Resultado |
+| Tests | Results |
 |---|---|
-| Testes | [![Resultados](https://github.com/MauricioPaivadaSilva/MCEpy/actions/workflows/pytest.yaml/badge.svg)](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/pytest.yaml) | -->
+| cargo test | [![Result](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/ci.yaml/badge.svg)](https://github.com/MauricioPaivadaSilva/MathCL/actions/workflows/ci.yaml) |
 
 
 </div>
@@ -64,7 +62,7 @@ In the basic module there are basic functions that are used in mathematics, name
 | `sum()` | `(f32, u32)` | `f32` | This is a function that solves a sum. |
 | `fat()` | `u32` | `u32` | This is a function that solves a factorial. |
 | `pow()` | `(f32, i32)` | `f32` | It is a function that resolves a power of any number. |
-| `module()` | `f32` | `f32` | This is a function that finds the modulus of the input value. |
+| `abs()` | `f32` | `f32` | This is a function that finds the modulus of the input value. |
 | `sqrt()` | `(f32, u32)` | `f32` | This is a function that solves for the root of a given value. |
 
 </div>
