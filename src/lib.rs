@@ -1,10 +1,18 @@
+/// # Basic module
+/// The basic module contains simple operations and a constants submodule.
+/// 
+/// ## All data output will be in `f32` for this module!
 pub mod basic {
 
+    /// # Numbers module
+    /// This module is dedicated to storing values ​​of known constants up to the 6th decimal place.
     pub mod numbers {
         pub const PI: f32 = 3.141592;
         pub const EULER: f32 = 2.718281;
     }
 
+    /// # Sum
+    /// This is a function of an adder, which given two input values ​​`(f32, u32)` returns the sum of `f32` `u32` times.
     pub fn sum(mut num: f32, n: u32) -> f32 {
         let mut i: u32 = 1;
         let start: f32 = num;
@@ -15,6 +23,8 @@ pub mod basic {
         num
     }
 
+    /// # Power
+    /// This function calculates a number _n_ raised to a power _p_.
     pub fn pow(mut num: f32, n: i32) -> f32 {
         if n < 0 {
             let start: f32 = num;
@@ -37,13 +47,17 @@ pub mod basic {
         num
     }
 
-    pub fn module(mut num: f32) -> f32 {
+    /// # Abs
+    /// This is a function that finds the modulus of the input value.
+    pub fn abs(mut num: f32) -> f32 {
         if num < 0.0 {
             num *= -1.0;
         }
         num
     }
 
+    /// # Sqrt
+    /// This is a function that solves for the root of a given value.
     pub fn sqrt(num: f32, n: u32) -> f32 {
         let mut x: f32 = 1.0;
         let mut count: u8 = 0;
@@ -55,9 +69,15 @@ pub mod basic {
     }
 }
 
+/// # Combinatorics Analysis Module
+/// The module contains combinatorial analysis operations.
+/// 
+/// ## All data output will be in `u32` for this module!
 pub mod combinate {
     use crate::basic::pow;
 
+    /// # Fat
+    /// This function solves the factorial of a number.
     pub fn fat(mut num: u32) -> u32 {
         if num == 0 || num == 1 {
             num = 1;
@@ -71,6 +91,8 @@ pub mod combinate {
         num
     }
 
+    /// # Awr
+    /// This function solves arrangement with repetition (awr).
     pub fn awr(num: u32, r: u32) -> u32 {
         let arg: f32;
         if r != 0 {
@@ -81,6 +103,8 @@ pub mod combinate {
         arg as u32
     }
 
+    /// # Arrangement
+    /// This function solves the arrangement calculation.
     pub fn arrangement(num: u32, r: u32) -> u32 {
         let mut arg: u32;
         if r == 1 {
@@ -98,6 +122,8 @@ pub mod combinate {
         arg
     }
 
+    /// # Permutation
+    /// This function solves permutations.
     pub fn permutation(num: u32) -> u32 {
         let arg: u32 = fat(num);
         arg
@@ -129,18 +155,18 @@ mod basic_test {
     }
 
     #[test]
-    fn module_1() {
-        assert_eq!(basic::module(2.0), 2.0)
+    fn abs_1() {
+        assert_eq!(basic::abs(2.0), 2.0)
     }
 
     #[test]
-    fn module_2() {
-        assert_eq!(basic::module(0.0), 0.0)
+    fn abs_2() {
+        assert_eq!(basic::abs(0.0), 0.0)
     }
 
     #[test]
-    fn module_3() {
-        assert_eq!(basic::module(-442.0), 442.0)
+    fn abs_3() {
+        assert_eq!(basic::abs(-442.0), 442.0)
     }
 
     #[test]
@@ -181,6 +207,11 @@ mod basic_test {
     #[test]
     fn sqrt_3() {
         assert_eq!(basic::sqrt(9.0, 2), 3.0)
+    }
+
+    #[test]
+    fn sqrt_4() {
+        assert_eq!(basic::sqrt(2.0, 2), 1.4142135)
     }
 }
 
