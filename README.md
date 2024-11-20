@@ -60,7 +60,6 @@ In the basic module there are basic functions that are used in mathematics, name
 | Function | Input | Output | Description |
 | --- | --- | --- | --- |
 | `sum()` | `(f32, u32)` | `f32` | This is a function that solves a sum. |
-| `fat()` | `u32` | `u32` | This is a function that solves a factorial. |
 | `pow()` | `(f32, i32)` | `f32` | It is a function that resolves a power of any number. |
 | `abs()` | `f32` | `f32` | This is a function that finds the modulus of the input value. |
 | `sqrt()` | `(f32, u32)` | `f32` | This is a function that solves for the root of a given value. |
@@ -68,6 +67,23 @@ In the basic module there are basic functions that are used in mathematics, name
 </div>
 
 There is also a sub module that contains values ​​of important constants like $e$ and $\pi$.
+
+### Combinatorial analysis module
+
+In the combinatorial analysis module there are functions for solving permutation, circular permutation, combination, arrangement and arrangement with repetition:
+
+<div align="center">
+
+| Function | Input | Output | Description |
+| --- | --- | --- | --- |
+| `fat()` | `u32` | `u32` | This is a function that solves a factorial. |
+| `awr()` | `(u32, u32)` | `u32` | This is a function that solves an array with repetition. |
+| `arrangement()` | `(u32, u32)` | `u32` | This is a function that solves an array. |
+| `permutation()` | `u32` | `u32` | This is a function that solves a permutation. |
+| `pc()` | `u32` | `u32` | This is a function that solves a circular permutation. |
+| `combinate()` | `(u32, u32)` | `u32` | This is a function that solves a combinatorics. |
+
+</div>
 
 <!-- #### Como importar as funções em seu código -->
 

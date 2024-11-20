@@ -58,7 +58,6 @@ No módulo básico há funções básicas que são utilizadas em matemática, se
 | Função | Entrada | Saída | Descrição |
 | --- | --- | --- | --- |
 | `sum()` | `(f32, u32)` | `f32` | Trata-se de uma função que resolve uma somatória. |
-| `fat()` | `u32` | `u32` | Trata-se de uma função que resolve um fatorial. |
 | `pow()` | `(f32, i32)` | `f32` | Trata-se de uma função que resolve uma potência de um número qualquer. |
 | `module()` | `f32` | `f32` | Trata-se de uma função que encontra o módulo do valor de entrada. |
 | `sqrt()` | `(f32, u32)` | `f32` | Trata-se de uma função que resolve a raíz de um dado valor. |
@@ -66,6 +65,23 @@ No módulo básico há funções básicas que são utilizadas em matemática, se
 </div>
 
 Também há um sub módulo que contém valores de constantes importantes como $e$ e o $\pi$.
+
+### Módulo de análise combinatória
+
+No módulo análise combinatória há funções para a resolução de permutação, permutação circular, combinação, arranjo e arranjo com repetição:
+
+<div align="center">
+
+| Função | Entrada | Saída | Descrição |
+| --- | --- | --- | --- |
+| `fat()` | `u32` | `u32` | Trata-se de uma função que resolve um fatorial. |
+| `awr()` | `(u32, u32)` | `u32` | Trata-se de uma função que resolve um arranjo com repetição. |
+| `arrangement()` | `(u32, u32)` | `u32` | Trata-se de uma função que resolve um arranjo. |
+| `permutation()` | `u32` | `u32` | Trata-se de uma função que resolve uma permutação. |
+| `pc()` | `u32` | `u32` | Trata-se de uma função que resolve uma permutação circular. |
+| `combinate()` | `(u32, u32)` | `u32` | Trata-se de uma função que resolve uma combinatória. |
+
+</div>
 
 <!-- #### Como importar as funções em seu código -->
 
