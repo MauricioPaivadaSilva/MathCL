@@ -128,6 +128,29 @@ pub mod combinate {
         let arg: u32 = fat(num);
         arg
     }
+
+    /// # Circular permutation
+    /// This function calculates a circular permutation.
+    pub fn pc(num: u32) -> u32 {
+        let arg: u32 = fat(num - 1);
+        arg
+    }
+
+    /// # Combinatorics
+    /// This function calculates the combination of a number taken from _r_ to _r_.
+    pub fn combinate(num: u32, r: u32) -> u32 {
+        let cm: u32;
+        if r != 0 {
+            if num > r {
+                cm = fat(num)/(fat(r)*fat(num - r));
+            } else {
+                panic!("\n\tErr ::> argument num is less than r\n")
+            }
+        } else {
+            panic!("\n\tErr ::> argument r is null\n")
+        }
+        cm
+    }
 }
 
 #[cfg(test)]
@@ -262,5 +285,47 @@ mod combinate_test {
     #[test]
     fn arrangement_3() {
         assert_eq!(combinate::arrangement(37, 4), 1_585_080)
+    }
+
+    #[test]
+    fn pc_1(){
+        assert_eq!(combinate::pc(12), 39_916_800)
+    }
+
+    #[test]
+    fn pc_2(){
+        assert_eq!(combinate::pc(3), 2)
+    }
+
+    #[test]
+    fn pc_3(){
+        assert_eq!(combinate::pc(1), 1)
+    }
+
+    #[test]
+    fn combinate_1(){
+        assert_eq!(combinate::combinate(10, 3), 120)
+    }
+
+    #[test]
+    fn combinate_2(){
+        assert_eq!(combinate::combinate(7, 4), 35)
+    }
+}
+
+#[cfg(test)]
+mod err_test {
+    use crate::combinate;
+
+    #[test]
+    #[should_panic(expected = "\n\tErr ::> argument r is null\n")]
+    fn arrangement_err() {
+        combinate::arrangement(3, 0);
+    }
+
+    #[test]
+    #[should_panic(expected = "\n\tErr ::> argument r is null\n")]
+    fn combinate_err() {
+        combinate::combinate(10, 0);
     }
 }
