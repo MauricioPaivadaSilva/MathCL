@@ -1,6 +1,6 @@
 [package]
 name = "mathcl"
-version = "0.0.1"
+version = "1.0.0"
 edition = "2021"
 authors = ["Maurício Paiva da Silva <mauriciopaiva.matematica@gmail.com>"]
 licence = "MIT"
