@@ -67,6 +67,18 @@ pub mod basic {
         }
         x
     }
+
+    /// # Productive
+    /// This is a one-adder function, where there are two input values ​​`(f32, u32)`, and it returns the product of `f32` times `u32`.
+    pub fn prod(mut num: f32, n: u32) -> f32 {
+        let mut i: u32 = 1;
+        let start: f32 = num;
+        while i <= n {
+            num *= start;
+            i += 1;
+        }
+        num
+    }
 }
 
 /// # Combinatorics Analysis Module
@@ -235,6 +247,21 @@ mod basic_test {
     #[test]
     fn sqrt_4() {
         assert_eq!(basic::sqrt(2.0, 2), 1.4142135)
+    }
+
+    #[test]
+    fn prod_1() {
+        assert_eq!(basic::prod(2.0, 1), 4.0)
+    }
+
+    #[test]
+    fn prod_2() {
+        assert_eq!(basic::prod(2.0, 4), 32.0)
+    }
+
+    #[test]
+    fn prod_3() {
+        assert_eq!(basic::prod(3.0, 10), 177_147.0)
     }
 }
 
