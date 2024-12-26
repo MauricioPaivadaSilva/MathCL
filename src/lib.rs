@@ -165,6 +165,39 @@ pub mod combinate {
     }
 }
 
+pub mod trigonometry {
+    mod consts {
+        mod ccos {
+            const COS_30: f32 = 0.86602540378443864;
+            const COS_45: f32 = 0.70710678118654752;
+            const COS_60: f32 = 0.5;
+            const COS_150: f32 = -0.86602540378443864;
+            const COS_135: f32 = -0.70710678118654752;
+            const COS_120: f32 = -0.5;
+            const COS_210: f32 = -0.86602540378443864;
+            const COS_225: f32 = -0.70710678118654752;
+            const COS_240: f32 = -0.5;
+            const COS_330: f32 = 0.86602540378443864;
+            const COS_315: f32 = 0.70710678118654752;
+            const COS_300: f32 = 0.5;
+        }
+        mod csin {
+            const SIN_30: f32 = 0.5;
+            const SIN_45: f32 = 0.70710678118654752;
+            const SIN_60: f32 = 0.86602540378443864;
+            const SIN_150: f32 = 0.5;
+            const SIN_135: f32 = 0.70710678118654752;
+            const SIN_120: f32 = 0.86602540378443864;
+            const SIN_210: f32 = -0.5;
+            const SIN_225: f32 = -0.70710678118654752;
+            const SIN_240: f32 = -0.86602540378443864;
+            const SIN_330: f32 = -0.5;
+            const SIN_315: f32 = -0.70710678118654752;
+            const SIN_300: f32 = -0.86602540378443864;
+        }
+    }
+}
+
 #[cfg(test)]
 mod basic_test {
     use super::*;
